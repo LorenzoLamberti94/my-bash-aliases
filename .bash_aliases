@@ -36,4 +36,4 @@ alias wget='wget -c'                                   # Resume wget by default
 
 alias AI_DECK='cd ~/work/gap_sdk && source configs/ai_deck.sh && cd -'  # source AI-deck
 alias GAP_SDK='cd ~/work/gap_sdk && source sourceme.sh && cd -'         # source GAP SDK
-alias olimex='export GAPY_OPENOCD_CABLE=$HOME/work/gap_sdk/tools/gap8-openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg '(base) lamberti@compute:~$
+alias olimex='export GAPY_OPENOCD_CABLE=$HOME/work/gap_sdk/tools/gap8-openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg '
