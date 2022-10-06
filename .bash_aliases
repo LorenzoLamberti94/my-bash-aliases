@@ -39,3 +39,19 @@ alias GAP_SDK='cd ~/work/gap_sdk && source sourceme.sh && cd -'         # source
 alias olimex='export GAPY_OPENOCD_CABLE=$HOME/work/gap_sdk/tools/gap8-openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg'
 alias olimex4.0='export GAPY_OPENOCD_CABLE=$HOME/work/gap8_openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg'
 
+
+##################
+#  Make aliases  #
+##################
+alias ma='make all'
+alias mc='make clean'
+alias mca='make clean all'
+alias mca8='make -j 8 clean all'
+alias mcar='make clean all run'
+alias mcac='make clean all cload'
+alias mcac8='make -j 8 clean all && make cload'
+alias cload='make cload'
+alias cload_D5='CLOAD_ARGS="-w radio://0/70/2M/E7E7E7E7D5" make cload'
+alias mcac8_D5='make -j 8 clean all && CLOAD_ARGS="-w radio://0/70/2M/E7E7E7E7D5" make cload'
+alias cload_E7='CLOAD_ARGS="-w radio://0/80/2M/E7E7E7E7E7" make cload'
+alias mcac8_E7='make -j 8 clean all && CLOAD_ARGS="-w radio://0/80/2M/E7E7E7E7E7" make cload'
