@@ -39,6 +39,8 @@ alias GAP_SDK='cd ~/work/gap_sdk && source sourceme.sh && cd -'         # source
 alias olimex='export GAPY_OPENOCD_CABLE=$HOME/work/gap_sdk/tools/gap8-openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg'
 alias olimex4.0='export GAPY_OPENOCD_CABLE=$HOME/work/gap8_openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg'
 
+alias GAP_SDK3.9='cd ~/work/gap_sdk3.9 && source configs/ai_deck.sh && cd -'         # source GAP SDK
+alias olimex3.9='export GAPY_OPENOCD_CABLE=$HOME/work/gap_sdk3.9/tools/gap8-openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg'
 
 ##################
 #  Make aliases  #
