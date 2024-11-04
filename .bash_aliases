@@ -5,11 +5,11 @@
 # Show all aliases
 alias ALIAS='cat ~/.bash_aliases'
 alias ALIAS_EDIT='vi ~/.bash_aliases'
-alias GIT_HELP='cat ~/HELP/.git_help'
-alias CONDA_HELP='cat ~/HELP/.conda_help'
+alias GIT_HELP='cat ~/my-bash-aliases/HELP/.git_help'
+alias CONDA_HELP='cat ~/my-bash-aliases/HELP/.conda_help'
 alias ALIAS_GIT='git --list-cmds=alias'
-alias SSH_HELP='cat ~/HELP/.ssh_help'
-alias CHMOD_HELP='cat ~/HELP/.chmod_help'
+alias SSH_HELP='cat ~/my-bash-aliases/HELP/.ssh_help'
+alias CHMOD_HELP='cat ~/my-bash-aliases/HELP/.chmod_help'
 
 # bashrc
 alias cat-bashrc='cat ~/.bashrc'
