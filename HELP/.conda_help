@@ -1,0 +1,44 @@
+========================================
+============== ENVIRONMENTS ============
+========================================
+
+========= Create an environment =========
+
+# From scratch
+conda create --name ENV_NAME python
+
+# Create env from a YAML file
+conda env create -f environment.yml
+
+======== Create requirements file YML ========
+
+conda env export > conda_deps.yml
+pip freeze > requirements.txt
+
+======== Remove an environment ========
+
+conda remove --name ENV_NAME --all
+
+========================================
+============== PACKAGES ================
+========================================
+
+======== Install a package ========
+
+conda install $PACKAGE_NAME
+pip install $PACKAGE_NAME
+
+======== Uninstall a package ========
+
+conda remove --name $ENVIRONMENT_NAME $PACKAGE_NAME
+pip uninstall $PACKAGE_NAME
+
+======== Install Python ========
+
+conda install python=x.x
+
+======== Install Jupyter ========
+
+pip install notebook
+pip install ipykernel
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"

@@ -1,0 +1,12 @@
+#### options ###
+
+o --> owners.
+g --> groups.
+u --> all users.
+
+r --> read
+w --> write
+x --> execute
+
+#### COMMAND ####
+chmod ugo+rwx <filename>

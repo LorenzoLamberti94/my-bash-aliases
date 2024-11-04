@@ -1,0 +1,52 @@
+_________________
+Local machine:
+
+generate a ssh key if you dont have one yet
+
+ssh-keygen
+cat ~/.ssh/id_rsa.pub --> copy the output of this
+
+_________________
+Remote Machine:
+
+ssh lamberti@gpu.eees.dei.unibo.it    
+vi ~/.ssh/authorized_keys --> paste here on a new line your Local machine ssh key.
+
+_________________
+You are now done. Try to ssh again to see if it works.
+
+
+
+DEBUGGING: if it doesnt work, change the .ssh/ and authorized_keys accessn permissions. These work:
+drwx------   	ssh/
+-rwxrwxrwx   	known_hosts*
+
+
+_________________
+VNCviewer and SSH TUNNEL
+
+#start
+./start_vnc
+
+# see used ports
+ps -ef|grep vnc
+
+# kill vnc
+vncserver -kill :PORT
+
+
+REMMINA
+
+0. start vnc server with sh script ./start_vnc
+
+1. take note of the port opened. for example, if vnc opens :4, then your port will be 5904
+
+2. Terminal: ssh with tunnel in compute
+	ssh -X -L 5904:localhost:5904 lamberti@compute.eees.dei.unibo.it
+	ssh -X -L 5904:localhost:5904 compute.eees.dei.unibo.it
+3. open remmina and type:
+localhost:5904     press enter
+
+if it doesnt work:
+- check the port opened by vnc and match it with yours. Example: vnc:3 --> localhost:5903
+- check ~/.vnc/*.log files

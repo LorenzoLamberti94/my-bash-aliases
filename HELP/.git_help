@@ -1,0 +1,68 @@
+####################### SUBMODULE ######################
+
+// How to add a submodule:
+	git submodule add <url> path/to/local/folder	
+
+// How to add a submodule with a specific commit:
+	git submodule add <url> path/to/local/folder    
+	git checkout <sha>
+	git add
+	git commit
+	git push
+
+// Remove a submodule:
+	git submodule deinit <path_to_submodule>
+	git rm <path_to_submodule>
+	git commit - m "Removed submodule "
+	rm -rf .git/modules/<path_to_submodule>
+
+################### CLONE RECURSIVE ###################
+
+// Clone recursive
+	git clone <REPO_URL> --recursive
+
+// Manual Init recursive after clone
+	git clone <REPO_URL>
+	git submodule update --init --recursive
+	
+
+####################### REMOTE ########################
+
+Add a new remote:
+	git remote add <remote_name> github@<address>
+
+
+push to a specific remote:
+	git push <remote name> <branch name>
+	git push <remote name> <branch name> (set default upstream)
+
+remove existing remote
+	git remote remove <remote nane>
+	
+####################### GIT KEY ########################
+
+cd .ssh/
+# OLD PROTOCOL
+	ssh-keygen
+	cat id_rsa.pub 
+
+# NEW PROTOCOL
+	ssh-keygen -t ed25519
+	cat id_ed.....	
+	
+####################### CONFIG #########################
+
+git config --global user.name "Lorenzo Lamberti"
+git config --global user.email "lori.l@live.it"
+git config --global --list
+
+
+#################### MIRROR REPO ######################
+
+git clone --bare https://github.com/EXAMPLE-USER/OLD-REPOSITORY.git
+
+git push --mirror https://github.com/EXAMPLE-USER/NEW-REPOSITORY.git
+
+######################################################
+
+
