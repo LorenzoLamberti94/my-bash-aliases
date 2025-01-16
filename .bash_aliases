@@ -3,8 +3,8 @@
 ###########
 
 # Show all aliases
-alias ALIAS='cat ~/.bash_aliases'
-alias ALIAS_EDIT='vi ~/.bash_aliases'
+alias ALIAS='cat ~/my-bash-aliases/.bash_aliases'
+alias ALIAS_EDIT='vi ~/my-bash-aliases/.bash_aliases'
 alias GIT_HELP='cat ~/my-bash-aliases/HELP/.git_help'
 alias CONDA_HELP='cat ~/my-bash-aliases/HELP/.conda_help'
 alias ALIAS_GIT='git --list-cmds=alias'
