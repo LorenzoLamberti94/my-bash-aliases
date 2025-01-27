@@ -15,10 +15,13 @@ alias CHMOD_HELP='cat ~/my-bash-aliases/HELP/.chmod_help'
 alias cat-bashrc='cat ~/.bashrc'
 alias source-bashrc='source ~/.bashrc'
 
-#ZSH
+# ZSH
 alias cat-zshrc='cat ~/.zshrc'
 alias edit-zshrc='vi ~/.zshrc'
 alias source-zshrc='source ~/.zshrc'
+
+# ssh
+alias cat-ssh='cat ~/.ssh/config'
 
 # common
 alias h='history'
