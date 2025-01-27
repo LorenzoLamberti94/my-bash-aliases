@@ -2,14 +2,17 @@
 # Aliases #
 ###########
 
+# better cat
+alias cat='batcat --style=plain'
+
 # Show all aliases
-alias ALIAS='cat ~/my-bash-aliases/.bash_aliases'
-alias ALIAS_EDIT='vi ~/my-bash-aliases/.bash_aliases'
-alias GIT_HELP='cat ~/my-bash-aliases/HELP/.git_help'
-alias CONDA_HELP='cat ~/my-bash-aliases/HELP/.conda_help'
+alias ALIAS='cat ~/SETUP/my-bash-aliases/.bash_aliases'
+alias ALIAS_EDIT='vi ~/SETUP/my-bash-aliases/.bash_aliases'
+alias GIT_HELP='cat ~/SETUP/my-bash-aliases/HELP/.git_help'
+alias CONDA_HELP='cat ~/SETUP/my-bash-aliases/HELP/.conda_help'
 alias ALIAS_GIT='git --list-cmds=alias'
-alias SSH_HELP='cat ~/my-bash-aliases/HELP/.ssh_help'
-alias CHMOD_HELP='cat ~/my-bash-aliases/HELP/.chmod_help'
+alias SSH_HELP='cat ~/SETUP/my-bash-aliases/HELP/.ssh_help'
+alias CHMOD_HELP='cat ~/SETUP/my-bash-aliases/HELP/.chmod_help'
 
 # bashrc
 alias cat-bashrc='cat ~/.bashrc'
@@ -53,9 +56,6 @@ alias PRINT_ENV_VAR='( setopt posixbuiltin; set; ) | less'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias copypath='pwd|pbcopy'
-
-#plugins
-alias cat='bat --style=plain'
 
 # Ubuntu extensions
 alias reset_wintile='source /home/lamberti/work/setup/reset_wintile.sh'
