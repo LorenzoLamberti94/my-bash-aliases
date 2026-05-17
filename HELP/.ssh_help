@@ -18,9 +18,28 @@ You are now done. Try to ssh again to see if it works.
 
 
 DEBUGGING: if it doesnt work, change the .ssh/ and authorized_keys accessn permissions. These work:
-drwx------   	ssh/
--rwxrwxrwx   	known_hosts*
+	drwx------   	ssh/
+	-rwxrwxrwx   	known_hosts*
 
+do:
+	chmod 700 .ssh
+	chmod 600 .ssh/authorized_keys
+
+
+=================
+CHMOD
+================
+
+chmod WHO[+,-,=]PERMISSIONS FILENAME
+
+example
+chmod g+w ~/example.txt
+
+Who (Letter)	Meaning
+u	user
+g	group
+o	others
+a	all
 
 _________________
 VNCviewer and SSH TUNNEL
